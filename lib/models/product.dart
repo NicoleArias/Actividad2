@@ -39,10 +39,10 @@ class FrozenProducts extends Product {
 }
 
 class ProductAir extends FrozenProducts {
-  String? nitrogeno;
-  String? oxigeno;
-  String? dioxido;
-  String? waterSteam;
+  int? nitrogeno;
+  int? oxigeno;
+  int? dioxido;
+  int? waterSteam;
 
   ProductAir(String? dateExpiry, String? lotNumber, String? packingDate,
       String? country)
