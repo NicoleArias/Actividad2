@@ -22,7 +22,7 @@ class FreshProducts extends Product {
 
 class RefrigeratedProducts extends Product {
   String? code;
-  String? temperature;
+  double? temperature;
 
   RefrigeratedProducts(String? dateExpiry, String? lotNumber,
       String? packingDate, String? country)
@@ -30,7 +30,7 @@ class RefrigeratedProducts extends Product {
 }
 
 class FrozenProducts extends Product {
-  String? temperature;
+  double? temperature;
   String? typeProduct;
 
   FrozenProducts(String? dateExpiry, String? lotNumber, String? packingDate,
@@ -50,7 +50,8 @@ class ProductAir extends FrozenProducts {
 }
 
 class ProductWater extends FrozenProducts {
-  int? salt;
+  double? salinity;
+  double? liter;
 
   ProductWater(String? dateExpiry, String? lotNumber, String? packingDate,
       String? country)
@@ -59,7 +60,7 @@ class ProductWater extends FrozenProducts {
 
 class ProductNitrogen extends FrozenProducts {
   String? method;
-  int? timeSeconds;
+  double? timeSeconds;
 
   ProductNitrogen(String? dateExpiry, String? lotNumber, String? packingDate,
       String? country)
